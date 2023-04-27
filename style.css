@@ -1,0 +1,209 @@
+:root {
+--haiti: rgba(29, 28, 59, 1);
+--black: rgba(0, 0, 0, 1);
+--white: rgba(255, 255, 255, 1);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&family=Montserrat:wght@100;200;400&display=swap');
+
+body {
+  align-items: center;
+  background-color: #17162e;
+  border: 1 px none;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+.titulo{
+  color: var(--white);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 61px;
+  min-height: 45px;
+  min-width: 282px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.campoPesquisa {
+  align-items: center;
+  background-color: #ffffff33;
+  border-radius: 8px;
+  display:flex;
+  gap:25px;
+  height: 20px;
+  margin-top: 49px;
+  min-width: 634px;
+  padding: 23px 24px;
+  font-weight: 600;
+}
+.inputPesquisa{
+  background: none;
+  width: 100%;
+  height: 40px;
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-left: -10px; 
+}
+.botaoPesquisa {
+  align-items: flex-end;
+  height: 25px;
+  width: 30px; 
+}
+.check {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  flex-direction: column;
+
+}
+label {
+  color: white;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 22px;
+  min-width: 313px;
+}
+.checkFavoritos {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkFavoritos + label[for="checkFavoritos"] {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.checkFavoritos + label[for="checkFavoritos"]::before {
+  content: '';
+  position: absolute;
+  border:2px solid; 
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border-color: #706da7; 
+  left: 0;
+  bottom: 0;
+  vertical-align: bottom;
+}
+
+.checkFavoritos:checked + label[for="checkFavoritos"]::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 10px;  
+  width: 10px;
+  height: 20px;
+  border-right: solid 3px white;
+  border-bottom: solid 3px white;
+  transform: rotate(45deg);
+
+}
+
+.movieBox{
+  align-items: center;
+  background-color: var(--haiti);
+  border-radius: 8px;
+  display: flex;
+  height: 201px;
+  justify-content: flex-end;
+  margin-top: 65px;
+  min-width: 1224px;
+  padding: 24px 37px;
+  filter: drop-shadow(32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15)) drop-shadow(23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406)) drop-shadow(16.6246px 12.4276px 34.4391px rgba(0, 0, 0, 0.10125)) drop-shadow(10.9035px 8.15079px 21.3701px rgba(0, 0, 0, 0.0867188)) drop-shadow(6.56775px 4.90965px 12.8375px rgba(0, 0, 0, 0.075)) drop-shadow(3.46346px 2.58907px 7.6377px rgba(0, 0, 0, 0.0632813)) drop-shadow(1.4367px 1.07399px 4.56719px rgba(0, 0, 0, 0.04875)) drop-shadow(0.333519px 0.249318px 2.42246px rgba(0, 0, 0, 0.0285938));
+}
+
+
+.flex-col {
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 64px;
+  margin-top: 4px;
+  min-height: 79px;
+  width: 268px;
+}
+
+.movies .flex {
+align-items: flex-start;
+display: flex;
+}
+
+.nomeFilme {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+  white-space: nowrap;
+}
+
+.flex-row {
+  height: 34px;
+  min-width: 221px;
+}
+
+.star{
+  height: 19px;
+  margin-top: 1px;
+  width: 20px;
+}
+.heart{
+  height: 20px;
+  margin-left: 44px;
+  margin-top: 1px;
+  width: 23px;
+}
+.text{
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 12px;
+  min-height: 34px;
+  width: 27px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.letras {
+  color: var(--white);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+.description {
+  letter-spacing: 0;
+  line-height: 31.9px;
+  margin-top: 7px;
+  margin-left: 78px;
+  min-height: 128px;
+  width: 592px;
+  color: #ACACAC;
+}
+.movies .favoritar-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 34px;
+  width: 84px;
+}
+
+.favoritar {
+  margin-left: 11px;
+}
+
+.imagemFilme {
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 800px;
+  box-shadow: 20px 20px 30px #0000004c;
+  height: 139px;
+  width: 139px;
+}
+
+
