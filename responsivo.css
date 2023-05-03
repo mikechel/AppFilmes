@@ -1,0 +1,97 @@
+@media screen and (max-device-width: 740px) {
+
+    header {
+        width: 100%;
+        display: inline-block;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    .titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+
+    /* Estilizando os campos de texto/conteudo principal para o responsivo até 740px*/
+    main {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .movieBox{
+        width: 80%;
+        height: 200px;
+        padding: 20px;
+        display: inline-block;
+    }
+
+
+
+    .topoFilmes {
+        height: 100px;
+        font-size: 24px;
+    }
+
+
+
+    /* Estilizando os botões para responsivo até 740px */
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+}
+
+   /* Estilizando para responsivo entre 741px ate 940px */
+@media only screen and (min-device-width: 741px) and (max-device-width: 940px) {
+
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logoAlura {
+        position: static;
+    }
+
+    .titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .campoInserir,
+    .campoResposta {
+        font-size: 32px;
+        width: 80%;
+        height: 250px;
+        padding: 30px;
+        display: inline-block;
+    }
+
+    .campoResposta img {
+        display: none;
+    }
+
+    .inserirText,
+    .respostaText {
+        height: 150px;
+        font-size: 32px;
+    }
+
+
+    button {
+        width: 100%;
+        font-size: 24px;
+    }
+
+}
